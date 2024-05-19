@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Quantico", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom,#2272FF, #000000);
+  color: white;
+  letter-spacing: 1px;
+  
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color:#000000;
+    color: #ffffff;
+    width: 100%;
+  }
+  
+  .navList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none; 
+  }
+
+  .navList li {
+    font-size: 300%;
+    margin: 0 10px;
+  }
+
+  .navList li a {
+    text-decoration: none;
+    
+  }
+   
+ 
+ h2 {
+ color: #F4BB44;
+ }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  font-size: 300%;
+}
+
+
+
+.heroButtons {
+padding-left: 15%;
+ width: 100%;
+ height: 100%;
+}
+
+.heroButton {
+  border-radius: 7px;
+  width: 20%;
+  font-size: 50%;
+  background-image: linear-gradient(to top, yellow, orange);
+  box-shadow: 0px 3px 3px rgba(0,0,0, 0.3);
+}
+
+
+
+.heroButton:hover {
+  background-image: linear-gradient(to bottom, orangered, white);
+  cursor: pointer;
+}
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 190%;
+  padding-left: 15%;
+}
+
+
+
+#education, #portfolio, #career {
+  display: none;
+  
+}
+
+
+ul {
+  list-style: none;
+}
+
+#education ul li {
+  padding-left: 3%;
+}
+
+#portfolio ul li {
+  padding-left: 6%;
+}
+
+#career ul li {
+  padding-left: 3%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #FF5B00; 
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: auto;
+  background-color:#000000;
+  color:#ffffff;
+}
+
+/*Mobile Layout*/
+@media only screen and (max-width: 790px) {
+
+body {
+  min-width: 30vh;
+  min-height: 100vh;
+  
+}
+   
+.hero {
+  min-height: 20vh;
+  font-size: 185%;
+}
+
+.heroButton {
+  border-radius: 7px;
+  width: 20%;
+  font-size: 60%;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  font-size: 120%;
+  width: 100%;
+  padding: 3%;
+}
+
+.info li {
+  padding-top: 6%;
+}
+
+footer {
+  display: flex;
+  padding: 10px;
+  margin-top: auto;
+}
+
+}
